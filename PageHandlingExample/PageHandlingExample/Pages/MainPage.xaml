@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage  
+            xmlns:customcontrols="clr-namespace:PageHandlingExample.CustomControls"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:location="clr-namespace:PageHandlingExample.Pages.Location" 
+            xmlns:setting="clr-namespace:PageHandlingExample.Pages.Setting"
+            x:Class="PageHandlingExample.Pages.MainPage"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" 
+            xmlns:guide="clr-namespace:PageHandlingExample.Pages.Guide"
+            xmlns:training="clr-namespace:PageHandlingExample.Pages.Training"
+            android:TabbedPage.ToolbarPlacement="Bottom">
+
+    <TabbedPage.Children>
+        <location:LocationPage x:Name="locationPage" Title="모니터링"/>
+        <guide:GuidePage x:Name="webViewGuidePage" Title="가이드"/>
+        <ContentPage Title=""/>
+        <training:TrainingPage x:Name="webViewTrainingPage" Title="연습"/>
+        <setting:SettingsPage x:Name="settingsPage" Title="설정"/>
+    </TabbedPage.Children>
+
+</TabbedPage>
